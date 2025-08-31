@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Sharma - 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Portfolio</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+        </div>
+        <div class="particles" id="particles"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-intro">
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ayush Sharma</span>
+          </h1>
+          <div class="typewriter-container">
+            <h2 class="typewriter" id="typewriter">
+              Software Developer Engineer
+            </h2>
+          </div>
+          <p class="hero-description">
+            I am a MERN Stack Developer and a B.Tech Computer Science student
+            with a strong foundation in JavaScript, Java, and Data Structures &
+            Algorithms. I have built 5+ full-stack projects using MongoDB,
+            Express.js, React.js, and Node.js, showcasing my ability to design
+            scalable, responsive, and user-friendly web applications. Along with
+            my technical expertise, I bring strong problem-solving skills,
+            adaptability, and a commitment to teamwork and work ethics, which
+            help me thrive in collaborative environments while continuously
+            learning and improving.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn--primary btn-3d">Get In Touch</a>
+            <a href="/resume.pdf" download class="btn btn--secondary btn-3d">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a passionate Software Developer Engineer with expertise in
+              full-stack development. I thrive on creating innovative solutions
+              and have experience building production-ready applications using
+              modern technologies like the MERN stack.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-card" data-target="180">
+                <div class="stat-number">0</div>
+                <div class="stat-label">CodeChef Streak</div>
+              </div>
+              <div class="stat-card" data-target="500">
+                <div class="stat-number">0</div>
+                <div class="stat-label">DSA Problems</div>
+              </div>
+              <!-- <div class="stat-card" data-target="10">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Innovation Projects</div>
+              </div> -->
+              <div class="stat-card" data-target="20">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Hackathons</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card" data-tilt>
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://expense-tracker-eight-kappa-94.vercel.app/"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Expense Tracker</h3>
+              <p class="project-description">
+                Developed an Expense Tracker application using React.js and
+                Styled-Components, featuring a clean and responsive user
+                interface. The application incorporates efficient state
+                management to handle transactions seamlessly and provides users
+                with the ability to categorize their expenses and income for
+                better financial tracking.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React Js</span>
+                <span class="tech-tag">Real-time Updates</span>
+                <span class="tech-tag">Styled-Component</span>
+              </div>
+              <div class="project-achievements">
+                <div class="achievement">
+                  By enabling users to organize and monitor their spending
+                  habits, the project demonstrates strong skills in front-end
+                  development, state handling, and UI design.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-tilt>
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Doctor Appointment System</h3>
+              <p class="project-description">
+                Developed a Doctor Appointment System using the MERN stack,
+                Redux, and Ant Design (AntD) to streamline the process of
+                booking and managing medical appointments. The platform allows
+                patients to schedule appointments, and view doctor availability,
+                while doctors can manage their schedules and patient
+                interactions.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">MERN</span>
+                <span class="tech-tag">REDUX</span>
+                <span class="tech-tag">ANT Design</span>
+              </div>
+              <div class="project-achievements">
+                <div class="achievement">
+                  Implemented state management with Redux for efficient data
+                  flow and AntD components for a responsive, professional, and
+                  user-friendly interface.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience & Education</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline">
+          <!-- <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI & ML Training</h3>
+                            <span class="timeline-org">NVIDIA</span>
+                            <span class="timeline-period">Mar 2024 – Mar 2025</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>Applied supervised and unsupervised learning techniques, boosting accuracy by 20%</li>
+                            <li>Constructed and optimized deep neural networks, increasing NLP and vision accuracy by 25%</li>
+                            <li>Implemented and deployed AI models, achieving 90%+ accuracy in text and image tasks</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Web Development Course and Training</h3>
+                <span class="timeline-org">IndiLearn</span>
+                <span class="timeline-period">Mar 2024 - Aug 2024</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li>
+                  Gained hands-on experience in the fundamentals of Web
+                  Development.
+                </li>
+                <li>
+                  Developed 5+ responsive and interactive projects demonstrating
+                  practical skills.
+                </li>
+                <li>
+                  Worked with modern JavaScript (ES6), JSON, and API
+                  integration.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Bachelor of Technology - CSE</h3>
+                <span class="timeline-org">ABES Institute of Technology</span>
+                <span class="timeline-period">Nov 2022 - Oct 2026</span>
+              </div>
+              <ul class="timeline-achievements">
+                <li>
+                  Mastered fundamental computer science concepts including
+                  algorithm design
+                </li>
+                <li>
+                  Improved code efficiency by 20% and reduced memory usage by
+                  10%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-items">
+              <div class="skill-item">Java</div>
+              <div class="skill-item">JavaScript</div>
+              <!-- <div class="skill-item"></div> -->
+              <div class="skill-item">MySQL</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frameworks & Libraries</h3>
+            <div class="skill-items">
+              <div class="skill-item">BootStrap</div>
+              <div class="skill-item">Tailwind</div>
+              <div class="skill-item">Express.js</div>
+              <div class="skill-item">React</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Concepts</h3>
+            <div class="skill-items">
+              <div class="skill-item">OOP</div>
+              <div class="skill-item">Data Structures</div>
+              <div class="skill-item">REST API</div>
+              <!-- <div class="skill-item">Microservices</div>
+              <div class="skill-item">CI/CD</div> -->
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">Git</div>
+              <div class="skill-item">GitHub</div>
+              <div class="skill-item">Netlify</div>
+              <!-- <div class="skill-item">Linux</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Key Achievements</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">⭐</div>
+            <div class="achievement-content">
+              <h3>HackerRank</h3>
+              <p>
+                Achieved <strong>3-Star rating</strong> in
+                <strong>Java</strong> and <strong>SQL</strong> on HackerRank.
+              </p>
+              <div class="achievement-metric">3★</div>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🔥</div>
+            <div class="achievement-content">
+              <h3>CodeChef Consistency</h3>
+              <p>
+                Maintained a 180+ day streak, demonstrating consistency in DSA &
+                competitive programming
+              </p>
+              <div class="achievement-metric">180+ Days</div>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">💡</div>
+            <div class="achievement-content">
+              <h3>Hackathons</h3>
+              <p>
+                Participated in <strong>20+ hackathons</strong>, contributing
+                innovative project ideas and full-stack solutions.
+              </p>
+              <div class="achievement-metric">20+ Hackathons</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:ayushsomi2003@gmail.com"
+                  >ayushsomi2003@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <a href="tel:+919311658612">+91 9580856202</a>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/ayush-sharma-b8487b297"
+                class="social-link"
+                >LinkedIn</a
+              >
+              <a href="https://github.com/asyncayush03" class="social-link"
+                >GitHub</a
+              >
+              <!-- <a href="#" class="social-link">Portfolio</a> -->
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="user_project"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group" id="contact-message"></div>
+            <button
+              type="submit"
+              class="btn btn--primary btn-3d btn--full-width"
+            >
+              Send Message
+            </button>
+          </form>
+          <!-- <form action="" class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <input
+                type="text"
+                required
+                placeholder="Name"
+                name="user_name"
+                class="contact__input"
+              />
+              <input
+                type="email"
+                required
+                placeholder="Email"
+                name="user_email"
+                class="contact__input"
+              />
+            </div>
+            <textarea
+              name="user_project"
+              required
+              placeholder="Enter Your Message"
+              class="contact__input"
+            ></textarea>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <button type="submit" class="button contact__button">
+              Send Message
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Ayush Sharma. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </body>
+</html>
